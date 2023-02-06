@@ -1,0 +1,73 @@
+//Import scss
+@import "components/mixins.scss";
+
+.button__img_navbar {
+  filter: invert(100%);
+}
+
+@media screen and (max-width: 768px) {
+  .button__img_navbar {
+    width: 2rem;
+  }
+}
+
+.nav__button-text {
+  position: absolute;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  @include sizes(10.6rem, 3.1rem);
+  color: map-get($colors, nav-foot-color);
+  text-decoration: none;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: map-get($colors, header-color);
+  background-color: map-get($colors, header-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.4s ease all;
+  &::after {
+    display: inline-flex;
+    content: "Solicitar Consultoria";
+    color: map-get($colors, header-color);
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    @include sizes(100%, 100%);
+    background-color: map-get($colors, nav-foot-color);
+    position: absolute;
+    top: -80px;
+    left: 0;
+    transition: 0.4s ease-in-out all;
+  }
+  &:hover::after {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__button-text {
+    @include sizes(8.1rem, 2.2rem);
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav__button-text {
+    @include sizes(4rem, 2rem);
+    font-size: 0.7rem;
+  }
+}
+
+.nav__button-text span {
+  position: relative;
+  transition: 0.4s ease all;
+}
+
+.btn__contact {
+  width: 275px;
+  cursor: pointer;
+}

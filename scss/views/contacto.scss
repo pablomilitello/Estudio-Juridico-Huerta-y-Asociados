@@ -1,0 +1,49 @@
+//Import scss
+@import "components/mixins.scss";
+
+.contact {
+  @include sizes(20rem, 27rem);
+  background-color: map-get($colors, contact-color);
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    @include sizes(20rem, 27rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    @include sizes(18rem, 27rem);
+  }
+}
+
+.field {
+  padding: 0.5rem;
+  width: 17rem;
+  margin: 0.6rem 0rem;
+  &:focus {
+    border-color: map-get($colors, nav-foot-color);
+  }
+}
+
+.text__contact {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.div__form__contact {
+  text-align: center;
+}
+
+.section__h3__contact {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1rem 0rem 0.5rem 0rem;
+}

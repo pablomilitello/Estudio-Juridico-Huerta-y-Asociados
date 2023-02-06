@@ -1,0 +1,43 @@
+/*GRID starts here*/
+.grid__body__conteiner {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "flexbox__nav__conteiner flexbox__nav__conteiner flexbox__nav__conteiner flexbox__nav__conteiner"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 6vh 15vh 50fr 50fr 50fr 50fr 15vh;
+}
+
+@media screen and (max-width: 768px) {
+  .grid__body__conteiner {
+    grid-template-areas:
+      "header"
+      "flexbox__nav__conteiner"
+      "main"
+      "main"
+      "main"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 6vh 15vh 30fr 30fr 30fr 30fr 15vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid__body__conteiner {
+    grid-template-areas:
+      "flexbox__nav__conteiner"
+      "main"
+      "main"
+      "main"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 25fr 25fr 25fr 25fr 15vh;
+  }
+}

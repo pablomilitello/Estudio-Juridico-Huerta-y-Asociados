@@ -1,0 +1,54 @@
+/*NAV starts here*/
+nav {
+  grid-area: flexbox__nav__conteiner;
+  background-color: map-get($colors, nav-foot-color);
+}
+
+.nav-link {
+  color: map-get($colors, text-general-color);
+  font-weight: bolder;
+  font-size: larger;
+  &:hover {
+    color: map-get($colors, text-general-color);
+    transform: scale(1.1);
+  }
+}
+
+.navbar__custom {
+  height: 7rem;
+}
+
+.navbar-collapse {
+  background-color: map-get($colors, nav-foot-color);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav__img-lawfirm {
+  width: 6rem;
+  border-radius: 0.5rem;
+  transition: all 1s ease;
+  &:hover {
+    color: map-get($colors, text-general-color);
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__img-lawfirm {
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav__img-lawfirm {
+    width: 6rem;
+  }
+}
+
+.nav__img-lawfirm img {
+  width: 100%;
+}

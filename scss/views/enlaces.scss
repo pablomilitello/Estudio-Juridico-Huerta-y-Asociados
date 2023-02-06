@@ -1,0 +1,26 @@
+//Import scss
+@import "components/mixins.scss";
+
+.section__linkcontainer {
+  @include flex(flex, column);
+  align-items: center;
+}
+
+.section__h3__links {
+  margin: auto;
+  margin: 1rem 0rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .section__h3__links {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__h3__links {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,25 @@
+//Import scss
+@import "components/mixins.scss";
+
+.section__h3__pages_services {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__h3__pages_services {
+    font-size: 1.5rem;
+    padding: 1rem 0rem 0.5rem 0rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__h3__pages_services {
+    font-size: 1.7rem;
+    padding: 1rem 0rem 0.3rem 0rem;
+    text-align: center;
+  }
+}

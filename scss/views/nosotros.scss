@@ -1,0 +1,69 @@
+//Import scss
+@import "components/mixins.scss";
+
+.section__pages__we {
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__pages__we {
+    padding-top: 1.25rem;
+    @include flex(flex, column);
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__pages__we {
+    padding-top: 0rem;
+    @include flex(flex, column);
+    align-items: center;
+  }
+}
+
+.div__we {
+  width: 77%;
+  margin: auto;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .div__we {
+    line-height: 1.6rem;
+    padding: 0rem;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .div__we {
+    padding: 0rem;
+    font-weight: bolder;
+  }
+}
+
+.section__h3__pages_we {
+  width: 90%;
+  margin: auto;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__h3__pages_we {
+    font-size: 1.5rem;
+    padding: 0rem 0rem 0.6rem 0rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__h3__pages_we {
+    font-size: 1.7rem;
+    padding: 1rem 0rem 0.3rem 0rem;
+    text-align: center;
+  }
+}

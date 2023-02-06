@@ -1,0 +1,9 @@
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex($display, $flex-direction) {
+  display: $display;
+  flex-direction: $flex-direction;
+}

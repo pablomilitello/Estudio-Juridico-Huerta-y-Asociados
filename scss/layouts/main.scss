@@ -1,0 +1,175 @@
+//MAIN starts here
+main {
+  grid-area: main;
+  background-color: map-get($colors, main-color);
+}
+
+div img {
+  width: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  div img {
+    width: 1rem;
+  }
+}
+
+.main__section__text-init {
+  @include flex(flex, column);
+  justify-content: center;
+  align-items: center;
+  @include sizes(auto, 50vh);
+  background-image: url(../images/background_web3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .main__section__text-init {
+    @include sizes(auto, 50vh);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__section__text-init {
+    @include sizes(auto, 40vh);
+  }
+}
+
+.main__text__init {
+  color: map-get($colors, text-general-color);
+  font-size: 3rem;
+  font-weight: bolder;
+  @include flex(flex, column);
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main__text__init {
+    font-size: 2.5rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__text__init {
+    font-size: 2rem;
+    justify-content: center;
+  }
+}
+
+.main__text__lawfirm {
+  color: map-get($colors, text-general-color);
+  text-align: center;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .main__text__lawfirm {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .main__text__lawfirm {
+    text-align: center;
+  }
+}
+
+.section__h3__we {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__h3__we {
+    font-size: 1.5rem;
+    padding: 0rem 0rem 0.6rem 0rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__h3__we {
+    font-size: 1.7rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    text-align: center;
+  }
+}
+
+.section__h3__services {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .section__h3__services {
+    font-size: 1.5rem;
+    padding: 0rem 0rem 0rem 0rem;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .section__h3__services {
+    font-size: 1.7rem;
+    padding: 0rem 0rem 0.3rem 0rem;
+    text-align: center;
+  }
+}
+
+.section__services {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__services {
+    margin: 0rem;
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__services {
+    margin: 0rem;
+    padding: 0rem;
+    @include flex(flex, column);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.section__we {
+  padding: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+  .section__we {
+    padding-top: 1.25rem;
+    @include flex(flex, column);
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section__we {
+    padding-top: 0rem;
+    @include flex(flex, column);
+    align-items: center;
+  }
+}

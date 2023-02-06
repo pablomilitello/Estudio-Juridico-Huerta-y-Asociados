@@ -1,0 +1,60 @@
+//Import scss
+@import "components/mixins.scss";
+
+/*HEADER starts here*/
+header {
+  grid-area: header;
+  background-color: map-get($colors, header-color);
+  font-size: 0.9rem;
+  @include flex(flex, row);
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    display: none;
+  }
+}
+
+.header__div__data {
+  @include flex(flex, row);
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0rem 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header__div__data {
+    margin: 0rem 0.2rem;
+  }
+}
+
+.header__data {
+  @include flex(flex, row);
+  color: map-get($colors, header-text-color);
+  font-style: normal;
+  font-weight: bolder;
+}
+
+.header_networks {
+  @include flex(flex, row);
+}
+
+.header-img-social_networks {
+  margin: 0rem 0.6rem;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-img-social_networks {
+    display: none;
+  }
+}
