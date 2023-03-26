@@ -83,14 +83,16 @@
       <h3 class="section__h3__contact">Contacto</h3>
       <p class="text__contact">Nos pondremos en contacto contigo a la brevedad</p>
     </section>
-    <form class="contact">
+    <form class="contact" id="contactForm">
       <div class="div__form__contact">
-        <input type="text" name="Nombre" class="field" placeholder="Nombre:" />
-        <input type="text" name="Apellido" class="field" placeholder="Apellido:" />
-        <input type="email" name="email" class="field" placeholder="Email:" />
-        <input type="tel" name="Teléfono" class="field" placeholder="Teléfono:" />
-        <textarea name="comentario" class="textarea__text field" placeholder="Dejanos tu consulta aquí:"></textarea>
-        <input type="submit" value="Enviar Datos" class="btn btn-primary btn__contact textarea__text field">
+        <input type="text" name="Nombre" class="field" id="nameForm" placeholder="Nombre:" />
+        <input type="text" name="Apellido" class="field" id="lastnameForm" placeholder="Apellido:" />
+        <input type="email" name="email" class="field" id="emailForm" placeholder="Email:" />
+        <input type="tel" name="Teléfono" class="field" id="phoneForm" placeholder="Teléfono:" />
+        <textarea name="comentario" class="textarea__text field" id="commentForm"
+          placeholder="Dejanos tu consulta aquí:"></textarea>
+        <input type="submit" value="Enviar Datos" id="buttonForm"
+          class="btn btn-primary btn__contact textarea__text field">
       </div>
     </form>
   </main>
@@ -109,6 +111,7 @@
           class="footer-img-social_networks" alt="logo-facebook" /></a>
     </div>
   </footer>
+  <script src="../js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

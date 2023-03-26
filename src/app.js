@@ -2,7 +2,7 @@ import express from 'express';
 import mailRouter from './routes/mail.routes.js';
 import { __dirname } from './utils.js';
 
-const PORT = 8080;
+const PORT = 5500;
 
 const app = express();
 
