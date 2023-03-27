@@ -9,8 +9,9 @@ contactForm.addEventListener('submit', (e) => {
   const commentForm = document.getElementById('commentForm').value;
   const dataInput = { nameForm, lastnameForm, emailForm, phoneForm, commentForm };
   const dataJson = JSON.stringify(dataInput);
-  fetch('http://localhost:8080', {
-    method: 'post',
+
+  fetch('http://localhost:8080/inputData', {
+    method: 'Post',
     body: dataJson,
   });
 });
