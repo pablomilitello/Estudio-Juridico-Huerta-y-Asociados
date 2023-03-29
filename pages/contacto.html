@@ -19,6 +19,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Noto+Serif&family=Volkhov&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body class="grid__body__conteiner">
@@ -83,13 +84,13 @@
       <h3 class="section__h3__contact">Contacto</h3>
       <p class="text__contact">Nos pondremos en contacto contigo a la brevedad</p>
     </section>
-    <form class="contact" id="contactForm">
+    <form class="contact" id="contactForm" method="POST">
       <div class="div__form__contact">
-        <input type="text" name="Nombre" class="field" id="nameForm" placeholder="Nombre:" />
-        <input type="text" name="Apellido" class="field" id="lastnameForm" placeholder="Apellido:" />
-        <input type="email" name="email" class="field" id="emailForm" placeholder="Email:" />
-        <input type="tel" name="Teléfono" class="field" id="phoneForm" placeholder="Teléfono:" />
-        <textarea name="comentario" class="textarea__text field" id="commentForm"
+        <input type="text" name="nameForm" class="field" id="nameForm" placeholder="Nombre:" />
+        <input type="text" name="lastnameForm" class="field" id="lastnameForm" placeholder="Apellido:" />
+        <input type="email" name="emailForm" class="field" id="emailForm" placeholder="Email:" />
+        <input type="tel" name="phoneForm" class="field" id="phoneForm" placeholder="Teléfono:" />
+        <textarea name="commentForm" class="textarea__text field" id="commentForm"
           placeholder="Dejanos tu consulta aquí:"></textarea>
         <input type="submit" value="Enviar Datos" id="buttonForm"
           class="btn btn-primary btn__contact textarea__text field">
@@ -112,6 +113,7 @@
     </div>
   </footer>
   <script src="../js/index.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
