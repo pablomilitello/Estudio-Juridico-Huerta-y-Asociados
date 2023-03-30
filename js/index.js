@@ -7,9 +7,9 @@ const commentForm = document.getElementById('commentForm').value;
 const dataInput = { nameForm, lastnameForm, emailForm, phoneForm, commentForm };
 const dataJson = JSON.stringify(dataInput);
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  fetch('http://localhost:8080/inputData', {
+  await fetch('http://localhost:8080/inputData', {
     method: 'POST',
     body: dataJson,
   });
