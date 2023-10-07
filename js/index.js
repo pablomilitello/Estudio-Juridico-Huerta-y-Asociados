@@ -1,5 +1,5 @@
+const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', async (e) => {
-  const contactForm = document.getElementById('contactForm');
   const nameForm = document.getElementById('nameForm').value;
   const lastnameForm = document.getElementById('lastnameForm').value;
   const emailForm = document.getElementById('emailForm').value;
@@ -8,7 +8,7 @@ contactForm.addEventListener('submit', async (e) => {
   const dataInput = { nameForm, lastnameForm, emailForm, phoneForm, commentForm };
   const dataJson = JSON.stringify(dataInput);
   e.preventDefault();
-  await fetch('http://localhost:8080/inputData', {
+  await fetch('http://localhost:8080/contact', {
     method: 'POST',
     body: dataJson,
     headers: { 'Content-Type': 'application/json' },
